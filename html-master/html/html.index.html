@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+  
+<head>
+  <!-- headはサイトのブラウザの一番上（検索エンジンやブラウザに向けた情報＞ -->
+ <title>総復習見直し</title>
+ <meta name="description" content="検索情報の表示">
+ <meta charset="utf-8">
+</head>
+ 
+<body>
+ 
+<header>
+    <!-- サイトの最上部（header) -->
+      <h1>header=サイトの一番上に表示（メイン画像）（メインタイトル）（h1）</h1>
+
+    <!-- ナビゲーションメニュー -->
+      <nav>
+        <a href="https://www.amazon.co.jp/gp/video/storefront/ref=atv_hm_hom_legacy_redirect?contentId=IncludedwithPrime&contentType=merch&merchId=IncludedwithPrime">アマゾン</a>
+        <a href="https://www.youtube.com/">ユーチューブ</a>
+        <a href="https://www.icloud.com/">アイクラウド</a>
+        <a href="https://terakoya.sejuku.net/home">サムライ</a>
+      </nav>
+
+</header>
+  
+<main>
+    <!-- サイトのメイン部分 -->
+      <h2>mainサイトのメインコンテンツ表示（h2）</h2>
+      <p>よく晴れるでしょう(p)</p>
+
+    <!-- 箇条書き（ul) -->
+     <ul>
+      <li>ui箇条書き-1</li>
+      <li>ui箇条書き-2</li>
+      <li>ui箇条書き-3</li>
+     </ul>
+
+     <!-- 箇条書き(ol) -->
+      <ol>
+        <li>ol箇条書き-1</li>
+        <li>ol箇条書き-2</li>
+        <li>ol箇条書き-3</li>
+      </ol>
+
+      <!-- 水平線の表示 (hr)の上の文章に線が入る-->
+       <h2>水平線の表示(hr)</h2>
+      <hr>
+       <h2>ｗ水平線文字</h2>
+       <p>ｗ水平線文字(hr)の上に線が表示される</p>
+      <hr>
+
+      <!-- 文字の改行、意図しない位置に表示され時使う-->
+       <p>これは、改行のテストです。改行できないとこうなる。</p>
+       <p>これは改行のテストです。<br>改行されると下にこんな感じで表示されている。</p>
+<br>
+<br>
+      <!-- div化＝見た目は変化しないが、囲まれた範囲は、グループ化されている -->
+      <div>
+        <p>div化で、囲まれた範囲は、グループ化されている</p>
+        <p>見た目は変化しないが、上とグループ化している</p>
+      </div>
+<br>
+<br>
+      <!-- テーブルタグ（表） -->
+       <h1>テーブルタグ</h1>
+      <table border="1">
+      <!-- 上の見出しの部分(tr=行)(th=見出し) -->
+        <tr>
+          <th>天才</th>
+          <th>馬鹿</th>
+        </tr>  
+      <!-- 見出しの中の部分（左）（th=見出し）（td=セル） -->
+        <tr>
+          <td>天才は努力</td>
+          <td>天才は諦めない</td>
+        </tr>  
+      <!-- 見出しの中の部分（右）（th=見出し）（td=セル） -->
+        <tr>
+          <td>馬鹿は楽をする</td>
+          <td>馬鹿はすぐ諦める</td>
+        </tr>
+      </table>
+<br>
+<br>
+      <!-- 画像の表示（フォルダにある場合） -->
+       <img src="../img/27.jpg" alt="ロゴ">
+       <br>
+       <h1>画像の下に表示させるには、改行させないと、文字が変なところに表示される</h1>
+<br>
+<br>
+      <!-- ハイパーリンク（URL指定して移動） -->
+       <a href="https://www.amazon.co.jp/gp/video/storefront/ref=atv_hm_hom_legacy_redirect?contentId=IncludedwithPrime&contentType=merch&merchId=IncludedwithPrime">アマゾン</a>
+<br>
+<br>
+<br>
+      <!-- 画像を選択するとリンク先フォルダファイルに移動 -->   
+       <a href="../html/Test.html">
+        <img src="../img/1.png" alt="ロゴ">
+       </a>
+<br>
+<br>
+      <!-- フォームの入力欄 -->
+      <form>
+        
+        <label>氏名</label>
+        <input type="text" placeholder="名前を入力してください">
+      
+      <br>
+
+        <label>年代</label>
+        <select>
+         <option>１０代以下</option>
+         <option>２０代以下</option>
+         <option>３０代以下</option>
+        </select>
+      
+      <br>
+        
+        <label>お問い合わせ内容</label>
+        <textarea></textarea>
+      
+      <br>
+        
+        <label>男性</label><input type="radio" name="gender">
+        <label>女性</label><input type="radio" name="gender">
+        <label>その他</label><input type="radio" name="gender">
+
+      <br>
+
+        <label>利用規約に同意する</label>
+        <input type="checkbox">
+
+      <br>
+      <br>
+
+        <input type="submit" value="送信">
+        <input type="reset" value="リセット">
+
+      </form>
+
+      <!-- article（記事）どこからどこが記事か制作者にわかりやすくする。サイトの見た目は変わらない -->
+       <article>
+      <!-- section制作者にどこまでか記事かわかりやすくするためのもの。サイトの見た目は変わらない -->
+       <section>
+        <h2>速報</h2>
+        <h3>像の赤ちゃん誕生</h3>
+        <p>市内の動物園で双子が生まれました。</p>
+       </section>
+
+       <section>
+        <h2>気象情報</h2>
+        <h3>全国の天気</h3>
+        <p>全国的に晴れますが、曇り空です。</p>
+       </section>
+
+       </article>
+<br>
+<br>
+       <!-- 音声再生 -->
+        <audio src="../mp3/Cosmos.mp3" controls></audio>
+<br>
+<br>
+       <!-- 動画再生 -->
+        <video src="../move/1.mp4" controls width="300" height="300"></video>
+<br>
+<br>
+       <!-- 長文折り畳み式 -->
+        <h1>吾輩は猫である</h1>
+        <details>
+       <!--details（詳細）という矢印の所  -->
+       <!-- summary（矢印の横の言葉） -->
+        
+        <summary>もっと見る</summary>
+        
+       猫は、自由である。自由である猫はどこにでも行けるが、責任が伴う。今日のニュース、気になったこと、感想、などを動画にしていく。
+      
+        </details>
+<br>
+<br>
+       <!-- iframe（サイトにWEBページを埋め込む）例、グーグルマップなど -->
+       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12937.106041382367!2d138.3090628!3d35.8422228!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601c69ba59d60a1d%3A0xece7f6497112276b!2z5bGx5Y-j6Zai5omA6Leh!5e0!3m2!1sja!2sjp!4v1731591375603!5m2!1sja!2sjp" 
+       width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+      
+</main>
+
+<footer>
+    <!-- サイトの最下層 -->
+    <p>Copyright IITENKI inc. All rights reserved</p>
+</footer>
+
+
+
+
+
+
+
+
+</body>
+
+</html>
