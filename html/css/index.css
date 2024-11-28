@@ -1,0 +1,31 @@
+
+h1 {
+  color: blue;
+  font-size: 100px;
+}
+
+#first{
+  color: blue;
+  text-align: center;
+}
+
+.second{
+  color: blueviolet;
+}
+
+div{
+  color: rgb(241, 6, 6);
+}
+
+.A{
+  font-size: 48px;
+  font-weight: bold;
+  font-style: italic;
+  color: chocolate;
+  line-height: 10.2;
+  letter-spacing: 15px;
+  text-decoration: underline;
+  text-decoration: line-through;
+  border: solid 1px red; 
+  border: dotted 3px blue;
+}
